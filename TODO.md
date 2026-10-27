@@ -12,7 +12,7 @@
 - [x] create status DTO
 - [x] implement status DTO
 - [x] Table DTO
-- [] Implement table DTO
+- [x] Implement table DTO
 
 ## Loop
 
@@ -26,7 +26,7 @@
 ## Output system
 
 - [] Make dashboard
-- [] make basic output table
+- [x] make basic output table
 
 ### dashboard
 
