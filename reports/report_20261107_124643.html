@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>test </title>
+<style>
+    body { font-family: Segoe UI, Arial, sans-serif; background:#f4f6f9; color:#263445; margin:0; padding:30px; }
+    .container { max-width:1100px; margin:auto; }
+    header, section { background:#fff; padding:24px; margin-bottom:20px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+    h1,h2 { color:#263445; }
+    .metadata { color:#667085; font-size:14px; }
+    .statistics { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:14px; }
+    .stat-card { background:#eef2f7; padding:16px; border-radius:8px; }
+    .stat-card h3 { margin-top:0; }
+    table { width:100%; border-collapse:collapse; margin-top:15px; }
+    th,td { padding:12px; text-align:center; border-bottom:1px solid #ddd; }
+    th { background:#263445; color:#fff; }
+    tr:nth-child(even) { background:#f2f2f2; }
+    footer { text-align:center; color:#777; padding:20px; }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+    <h1>test </h1>
+    <p class="metadata">Fecha de generación: 2026-11-07 12:46:43</p>
+    <p>test</p>
+</header>
+<section>
+    <h2>Resumen de estadísticas</h2>
+    <div class="statistics">
+        <div class="stat-card"><h3>CPU</h3><p>Mínimo: 1%</p><p>Máximo: 9%</p><p>Promedio: 4%</p></div>
+        <div class="stat-card"><h3>Memoria RAM</h3><p>Mínimo: 73%</p><p>Máximo: 74%</p><p>Promedio: 74%</p></div>
+        <div class="stat-card"><h3>Swap</h3><p>Mínimo: 0%</p><p>Máximo: 0%</p><p>Promedio: 0%</p></div>
+        <div class="stat-card"><h3>Disco (unidad del sistema)</h3><p>Mínimo: 26%</p><p>Máximo: 26%</p><p>Última medición: 26%</p></div>
+    </div>
+</section>
+<section>
+    <h2>Historial de mediciones</h2>
+    <table>
+        <thead><tr><th>Fecha</th><th>CPU</th><th>RAM</th><th>Swap</th><th>Disco</th></tr></thead>
+        <tbody><tr><td>2026-11-07 12:45:37</td><td>1%</td><td>74%</td><td>0%</td><td>26%</td></tr>
+<tr><td>2026-11-07 12:45:50</td><td>9%</td><td>74%</td><td>0%</td><td>26%</td></tr>
+<tr><td>2026-11-07 12:46:01</td><td>3%</td><td>74%</td><td>0%</td><td>26%</td></tr>
+<tr><td>2026-11-07 12:46:13</td><td>6%</td><td>73%</td><td>0%</td><td>26%</td></tr>
+<tr><td>2026-11-07 12:46:24</td><td>3%</td><td>73%</td><td>0%</td><td>26%</td></tr>
+<tr><td>2026-11-07 12:46:35</td><td>3%</td><td>73%</td><td>0%</td><td>26%</td></tr></tbody>
+    </table>
+</section>
+<footer><p>System Monitoring Report</p><p>Generated automatically by PowerShell Monitor</p></footer>
+</div>
+</body>
+</html>
