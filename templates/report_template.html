@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>${REPORT_TITLE}</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+        color: #333;
+        margin: 0;
+        padding: 30px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      header,
+      section {
+        background: white;
+        padding: 25px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+      }
+
+      h1,
+      h2 {
+        color: #263445;
+      }
+
+      .metadata {
+        color: #666;
+        font-size: 14px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background: #263445;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background: #f2f2f2;
+      }
+
+      .statistics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+      }
+
+      .stat-card {
+        background: #eef2f7;
+        padding: 15px;
+        border-radius: 6px;
+      }
+
+      .stat-card h3 {
+        margin-top: 0;
+      }
+
+      footer {
+        text-align: center;
+        color: #777;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>${REPORT_TITLE}</h1>
+
+        <p class="metadata">Fecha de generación: ${GENERATED_AT}</p>
+
+        <p>${REPORT_DESCRIPTION}</p>
+      </header>
+
+      <section>
+        <h2>Resumen de estadísticas</h2>
+
+        <div class="statistics">
+          <div class="stat-card">
+            <h3>CPU</h3>
+            <p>Mínimo: ${CPU_MIN}%</p>
+            <p>Máximo: ${CPU_MAX}%</p>
+            <p>Promedio: ${CPU_AVG}%</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>Memoria RAM</h3>
+            <p>Mínimo: ${MEM_MIN}%</p>
+            <p>Máximo: ${MEM_MAX}%</p>
+            <p>Promedio: ${MEM_AVG}%</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>Swap</h3>
+            <p>Mínimo: ${SWAP_MIN}%</p>
+            <p>Máximo: ${SWAP_MAX}%</p>
+            <p>Promedio: ${SWAP_AVG}%</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>Disco</h3>
+            <p>Mínimo: ${DISK_MIN}%</p>
+            <p>Máximo: ${DISK_MAX}%</p>
+            <p>Última medición: ${DISK_LAST}%</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Historial de mediciones</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>CPU</th>
+              <th>RAM</th>
+              <th>Swap</th>
+              <th>Disco</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            ${METRICS_ROWS}
+          </tbody>
+        </table>
+      </section>
+
+      <footer>
+        <p>System Monitoring Report</p>
+        <p>Generated automatically by Bash Monitor</p>
+      </footer>
+    </div>
+  </body>
+</html>

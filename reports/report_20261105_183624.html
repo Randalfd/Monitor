@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>test</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+        color: #333;
+        margin: 0;
+        padding: 30px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      header,
+      section {
+        background: white;
+        padding: 25px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+      }
+
+      h1,
+      h2 {
+        color: #263445;
+      }
+
+      .metadata {
+        color: #666;
+        font-size: 14px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background: #263445;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background: #f2f2f2;
+      }
+
+      .statistics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+      }
+
+      .stat-card {
+        background: #eef2f7;
+        padding: 15px;
+        border-radius: 6px;
+      }
+
+      .stat-card h3 {
+        margin-top: 0;
+      }
+
+      footer {
+        text-align: center;
+        color: #777;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>test</h1>
+
+        <p class="metadata">Fecha de generación: 2026-11-05 18:36:24</p>
+
+        <p>test</p>
+      </header>
+
+      <section>
+        <h2>Resumen de estadísticas</h2>
+
+        <div class="statistics">
+          <div class="stat-card">
+            <h3>CPU</h3>
+            <p>Mínimo: 1%</p>
+            <p>Máximo: 2%</p>
+            <p>Promedio: 1%</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>Memoria RAM</h3>
+            <p>Mínimo: 51%</p>
+            <p>Máximo: 52%</p>
+            <p>Promedio: 51%</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>Swap</h3>
+            <p>Mínimo: 0%</p>
+            <p>Máximo: 0%</p>
+            <p>Promedio: 0%</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>Disco</h3>
+            <p>Mínimo: 11%</p>
+            <p>Máximo: 11%</p>
+            <p>Última medición: 11%</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Historial de mediciones</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>CPU</th>
+              <th>RAM</th>
+              <th>Swap</th>
+              <th>Disco</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+            <td>1793914513</td>
+            <td>1%</td>
+            <td>51%</td>
+            <td>0%</td>
+            <td>11%</td>
+        </tr>
+<tr>
+            <td>1793914524</td>
+            <td>1%</td>
+            <td>51%</td>
+            <td>0%</td>
+            <td>11%</td>
+        </tr>
+<tr>
+            <td>1793914534</td>
+            <td>2%</td>
+            <td>51%</td>
+            <td>0%</td>
+            <td>11%</td>
+        </tr>
+<tr>
+            <td>1793914544</td>
+            <td>2%</td>
+            <td>52%</td>
+            <td>0%</td>
+            <td>11%</td>
+        </tr>
+<tr>
+            <td>1793914554</td>
+            <td>1%</td>
+            <td>52%</td>
+            <td>0%</td>
+            <td>11%</td>
+        </tr>
+<tr>
+            <td>1793914565</td>
+            <td>2%</td>
+            <td>52%</td>
+            <td>0%</td>
+            <td>11%</td>
+        </tr>
+
+          </tbody>
+        </table>
+      </section>
+
+      <footer>
+        <p>System Monitoring Report</p>
+        <p>Generated automatically by Bash Monitor</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -18,36 +18,36 @@
 
 - [x] capture data(CPU, Disk, Mem)
 - [x] print data
-- [] alert high cpu usage
-- [] alert low disk remainder
-- [] alert low ram ramainder
+- [x] alert high cpu usage
+- [x] alert low disk remainder
+- [x] alert low ram ramainder
 - [x] make interval sleep
 
 ## Output system
 
-- [] Make dashboard
+- [x] Make dashboard
 - [x] make basic output table
 
 ### dashboard
 
-- [] min data
-- [] avg data
-- [] max data
+- [x] min data
+- [x] avg data
+- [x] max data
 - [] graph
 
 ## Logs
 
-- [] create alert
+- [x] create alert
 
 ### Disk
 
-- [] Temporal files
+- [x] remove temporal files
 
 ### CPU
 
-- [] Send mail to admin
+- [x] Send mail to admin
 - [] ask to kill most expensive process
 
 ### RAM
 
-- [] list most expensive process(ten)
+- [x] list most expensive process(five)
